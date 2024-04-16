@@ -1,0 +1,234 @@
+/* lexend-giga-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lexend-giga-v25-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lexend-giga-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-giga-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lexend-giga-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/lexend-giga-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lexend-giga-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/lexend-giga-v25-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lexend-giga-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lexend-giga-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lexend-giga-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lexend Giga';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/lexend-giga-v25-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* barlow-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/barlow-v12-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* barlow-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* barlow-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: pageIntro 300ms ease-out;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    color: black;
+    overflow-x: hidden;
+}
+.container{
+    padding: 10px 15%;
+    display: flex;
+    align-items: start;
+}
+nav{
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 500;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 15%;
+    margin: 50px 50px 0 0;
+}
+.topbar img{
+    width: 250px;
+    padding: 25px 0;
+}
+.fa-solid.fa-xmark, .fa-solid.fa-bars{
+  display: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: block;
+    list-style: none;
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+nav ul li a{
+    text-align: center;
+    color: hsl(0, 0%, 33%);
+    text-decoration: none;
+    font-size: 12px;
+}
+.socials{
+  margin-top: 10px;
+}
+.socials a{
+  color: hsl(0, 0%, 33%);
+  font-size: 24px;
+  padding: 0 10px;
+  
+}
+.maincontent{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes pageIntro {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .container{
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fa-solid.fa-xmark, .fa-solid.fa-bars{
+    display: block;
+  }
+  .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 18px;
+  }
+  .topbar img{
+    width: 300px;
+    padding: 0;
+  }
+  .topbar i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px;
+    font-size: 24px;
+  }
+  nav{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: hsl(0, 0%, 95%);
+    flex-basis: 100%;
+  }
+  nav ul{
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute; 
+    top: -1100px;
+    right: 0;
+    z-index: 10;
+    padding: 30px 0 0 0;
+    transition: top 0.5s;
+  }
+  nav ul .fa-solid.fa-xmark{
+    color: hsl(0, 0%, 33%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 24px;
+    font-size: 24px;
+  }
+  nav ul li{
+    width: 100vw;
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 10px;
+    margin: 30px 0 0 0;
+  }
+  .socials a{
+    font-size: 36px;
+    padding: 0 15px;
+  }  
+  .maincontent{
+    flex-basis: 100%;
+  }
+}

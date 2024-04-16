@@ -1,0 +1,35 @@
+.wrapper{
+    width: 100%;
+    margin: 75px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 5px;
+}
+.wrapper img{
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: filter 200ms;
+}
+.wrapper img:hover{
+    filter: brightness(50%);
+}
+@media (min-width: 1300px) and (max-width: 1500px){
+    .wrapper img{
+        width: 225px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1300px){
+    .wrapper img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .wrapper{
+        width: 100vw;
+        grid-template-columns: repeat(3, minmax(125px, 1fr));
+    }
+    .wrapper img{
+        width: 100%;
+    }
+}

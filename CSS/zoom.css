@@ -1,0 +1,38 @@
+
+body{
+    position: relative;
+}
+
+.fullscreen{
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    display: none;
+}
+.exitarea{
+    width: 100vw;
+    height: 100vh;
+}
+.fullscreen div{
+    z-index: 11;
+}
+.fullscreen i{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: white;
+    font-size: 32px;
+    padding: 16px;
+    cursor: pointer;
+}
+.fullscreen div img{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: cover;
+}

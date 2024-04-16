@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="description" content="Professional photography and videography for events such as weddings, debuts, birthdays, cosplay, and etc. ">
+    <meta property="og:title" content="Captured by Dandan - Cosplay Photography " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://capturedbydandan.vercel.app/" />
+    <meta property="og:image" content="" />
+    <title>Captured by Dandan Cosplay Photography</title>
+    <script src="https://kit.fontawesome.com/dbf3b908ea.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/pictures.css">
+    <link rel="stylesheet" href="CSS/zoom.css">
+</head>
+<body>
+<div class="bodywrapper">
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="topbar">
+                <a href="index.html">
+                    <img src="images/Captured By Dan - 2024 (Black).png" alt="">
+                </a>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+            <ul id="sidemenu">
+                <i class="fa-solid fa-xmark" onclick="exitmenu()"></i>
+                <li><a href="about.html">About</a></li>
+                <li><a href="intramuros.html">Intramuros</a></li>
+                <li><a href="NAWP.html">Ninoy Aquino<br>Wildlife Park</a></li>
+                <li><a href="binondo.html">Binondo</a></li>
+                <li><a href="raichi.html">Rai Chi Studio</a></li>
+                <li>DLS-CSB Taft Campus</li>
+                <li><a href="dlscsb.html">DLS-CSB D+A Campus</a></li>
+                <li><a href="cornerhouse.html">The Corner House</a></li>
+                <li><a href="district1.html">District 1</a></li>
+                <li><a href="bgc.html">BGC</a></li>
+                <li><a href="conventions.html">Conventions</a></li>
+                <div class="socials">
+                    <a href="https://www.facebook.com/profile.php?id=100089737418346"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/capturedbydandan/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </ul>
+        </nav>
+        <script src="JS/navbar.js"></script>
+        <div class="maincontent">
+            <div class="wrapper">
+                <img src="images/DLS-CSB Taft/1.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/2.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/3.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/4.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/5.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/6.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/7.jpg" alt="" onclick="zoomIn(event)">
+                <img src="images/DLS-CSB Taft/8.jpg" alt="" onclick="zoomIn(event)">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fullscreen" id="fullscreen">
+    <i class="fa-solid fa-xmark" onclick="imageExit()"></i>
+    <div class="exitarea" onclick="imageExit()"></div>
+    <div>
+        <img id="imagefullscreen" src="" alt="">
+    </div>
+</div>
+</div>
+<script src="JS/pictures.js"></script>
+</body>
+</html>
